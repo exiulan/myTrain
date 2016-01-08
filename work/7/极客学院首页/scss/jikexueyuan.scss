@@ -1,0 +1,57 @@
+
+/*变量定义*/
+$positionRel:relative;
+$positionAbs:absolute;
+$bgColor:#fff;
+
+/*长宽margin*/
+@mixin hgtWidh($height: 50px,$width: 1000px,$uM:0,$RM:auto,$dM:0,$lM:auto,$uP:10px,$RP:0,$dP:0,$lP:10px){
+    width: $width;
+    height:$height;
+    margin: $uM $RM $dM $lM;
+    padding: $uP $RP $dP $lP;
+}
+@mixin text($size:12px,$align:left,$lineHeight:18px,$border:0,$borderBgL:#fff){
+    font-size: $size;
+    text-align: $align;
+    border: $border solid $borderBg;
+    line-height: $lineHeight;
+}
+/*嵌套使用*/
+.header{
+    @include hgtWidh;
+    min-height: 70px;
+    .wrap {
+        position: $position;
+        &:after{
+            display: table;
+            clear: both;
+            content: " ";
+        }
+    }
+    .logo {
+        @include hgtWidh(auto,113px,5px,0,0,0,0,0,0,0);
+        float: left;
+        vertical-align: middle;
+    }
+    .search-section {
+        position: $positionAbs;
+        @include hgtWidh(38px,380px,0,0,0,-190px,0,0,0,0);
+        left: 50%;
+        border: 1px solid #e4e4e4;
+        .search-text {
+            @include hgtWidh(36px,100%,0,0,0,0,9px,55px,9px,15px);
+            @include text;
+        }
+    }
+    .search-btn {
+        position: $positionAbs;
+        @include hgtWidh(38px,40px,0,0,0,0,0,0,0,0);
+        @include text(38px,40px,0,0,0,0,0,0,0,0);
+        top: -1px;
+        right: -1px;
+        border: 1px solid #dfdfdf;
+        color: #6d6d6d;
+        background: url(../img/topsearch-icon_e1f5df2.png) center center no-repeat;
+    }
+}

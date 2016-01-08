@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTDXHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/baiduTell.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <title>手机版百度首页之响应式布局学习</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 头部包含用户登录信息、logo、表单输入框、导航-->
+        <div class="header">
+            <div class="user_info">
+                <div class="weather">
+                    <div>17°</div>
+                    <div class="weather-status">
+                        <p>南京</p>
+                        <p>空气&nbsp;45</p>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="plus_logo.png" alt="百度一下，你就知道">
+            </div>
+            <div class="form">
+                <div class="con-wrap">
+                    <textarea class="text"></textarea>
+                    <div class="se-inner">
+                        <div class="icon-wrap">
+                            <div class="icon"></div>
+                        </div>
+                        <button class="bnt" type="submit">百度一下</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-baidu">
+                <a href="http://m.baidu.com/news?fr=mohome&amp;ssid=0&amp;from=844b&amp;uid=&amp;pu=sz%401320_2001%2Cta%40iphone_1_8.0_3_600&amp;bd_page_type=1">
+                    <i class="nav-news glyphicon glyphicon-list-alt"></i> 新闻
+                </a>
+                <a href="http://dushu.baidu.com">
+                    <i class="nav-novels glyphicon glyphicon-book"></i> 小说
+                </a>
+                <a href="http://video.m.baidu.com/?from=wise_nav">
+                    <i class="nav-video glyphicon glyphicon-play-circle"></i> 视频
+                </a>
+                <a href="http://life.m.baidu.com?sfrom=wise_nav">
+                    <i class="nav-life glyphicon glyphicon-qrcode"></i> 生活+
+                </a>
+                <a href="http://map.baidu.com/mobile/webapp/index/index/?itj=45&amp;wtj=wi&amp;ssid=0&amp;from=844b&amp;uid=&amp;pu=sz%401320_2001%2Cta%40iphone_1_8.0_3_600&amp;bd_page_type=1">
+                    <i class="nav-map glyphicon glyphicon-map-marker"></i> 地图
+                </a>
+                <a href="http://m.baidu.com/news?fr=mohome&amp;ssid=0&amp;from=844b&amp;uid=&amp;pu=sz%401320_2001%2Cta%40iphone_1_8.0_3_600&amp;bd_page_type=1">
+                    <i class="nav-more glyphicon glyphicon-chevron-down"></i> 更多
+                </a>
+                <a href="http://m.baidu.com/news?fr=mohome&amp;ssid=0&amp;from=844b&amp;uid=&amp;pu=sz%401320_2001%2Cta%40iphone_1_8.0_3_600&amp;bd_page_type=1">
+                    <i class="nav-tieba"></i> 贴吧
+                </a>
+                <a href="http://m.baidu.com/news?fr=mohome&amp;ssid=0&amp;from=844b&amp;uid=&amp;pu=sz%401320_2001%2Cta%40iphone_1_8.0_3_600&amp;bd_page_type=1">
+                    <i class="nav-image"></i> 图片
+                </a>
+                <a href="http://m.baidu.com/news?fr=mohome&amp;ssid=0&amp;from=844b&amp;uid=&amp;pu=sz%401320_2001%2Cta%40iphone_1_8.0_3_600&amp;bd_page_type=1">
+                    <i class="nav-website"></i> 网址
+                </a>
+                <a href="http://m.baidu.com/news?fr=mohome&amp;ssid=0&amp;from=844b&amp;uid=&amp;pu=sz%401320_2001%2Cta%40iphone_1_8.0_3_600&amp;bd_page_type=1">
+                    <i class="nav-extend"></i> 推广
+                </a>
+            </div>
+        </div>
+        <!-- 页面中部包含交通信息、常用网址、热搜、生活服务、登录信息-->
+        <div class="pager">
+            <div class="traffic">
+                <div class="plus-title">
+                    <div class="normal-title">
+                        <i class="icon-traffic glyphicon glyphicon-random"></i>
+                        <h2>交通状况</h2>
+                        <a class="plus-edit">
+                            <i class="icon-edit"></i>
+                            <ul>
+                                <li data-action="traffic-edit">设置</li>
+                                <li data-action="top">置顶</li>
+                                <li data-action="close">关闭</li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+                <div class="plus-content">
+                    <div class="plus-empty edit-add">
+                        <p>设置家和公司地址</p>
+                        <p>随时随地，了解实时路况</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="plus-title">
+                    <div class="normal-title">
+                        <i class="icon-nav glyphicon glyphicon-globe"></i>
+                        <h2>常用网址</h2>
+                        <a class="plus-edit">
+                            <i class="icon-edit"></i>
+                            <ul class="noTapColor">
+                                <li data-action="edit">编辑</li>
+                                <li data-action="top">置顶</li>
+                                <li data-action="close">关闭</li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+                <div class="plus-content hasnew">
+                    <a href="http://tieba.baidu.com?mo_device=1&amp;itj=43" class="new"><span>贴吧</span><div data-icon="edit-close"></div></a>
+                    <a href="http://m.hao123.com?itj=49" class="hao123"><span>hao123</span><div data-icon="edit-close"></div></a>
+                    <a href="http://map.baidu.com/mobile/webapp/index/index?itj=45&amp;wtj=wi" data-schema="baidumap://map?src=wise.show.index.nav"><span>地图</span><div data-icon="edit-close"></div></a>
+                    <a href="http://vip.baidu.com/wise/?vip_frm=wise_wz"><span>百度VIP</span><div data-icon="edit-close"></div></a><a data-default="1" data-type="1005" href="http://image.baidu.com/search/wiseindex?tn=wiseindex&amp;wiseps=1"><span>图片</span><div data-icon="edit-close"></div></a>
+                    <a href="http://music.baidu.com?itj=420&amp;fr=music_wise1"><span>音乐</span><div data-icon="edit-close"></div></a>
+                    <a href="http://m.nuomi.com/?cid=bdsywz"><span>糯米</span><div data-icon="edit-close"></div></a>
+                    <a> <span class="add glyphicon glyphicon-plus"></span></a>
+                </div>
+            </div>
+            <div class="hotword">
+                <div class="plus-title">
+                    <div class="normal-title">
+                        <i class="icon-news glyphicon glyphicon-list-alt"></i>
+                        <h2>实时热点</h2>
+                        <span class="refresh">换一批<i class="icon-refresh glyphicon glyphicon-repeat" data-times="1"></i></span>
+                        <a class="plus-edit">
+                            <i class="icon-edit glyphicon glyphicon-option-vertical"></i>
+                            <ul>
+                                <li data-action="top">置顶</li>
+                                <li data-action="close">关闭</li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+                <ul class="hotword-list"></ul>
+            </div>
+            <div class="lbs">
+                <div class="plus-title">
+                    <div class="normal-title">
+                        <i class="icon-lbs glyphicon glyphicon-map-marker"></i>
+                        <h2>生活服务</h2>
+                        <a class="plus-edit">
+                            <i class="icon-edit  glyphicon glyphicon-option-vertical"></i>
+                            <ul>
+                                <li data-action="top">置顶</li>
+                                <li data-action="close">关闭</li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="admin">
+                <i class="icon-setting"></i> 管理我的首页
+            </div>
+        </div>
+    </div>
+    <!-- 页面底部包含脚注及推荐信息-->
+    <div class="bootom">
+        <ul class="introduce">
+            <li><a href="http://uil.cbs.baidu.com/urlsafe/redirect?rid=100055">百度浏览器，上网提速200%</a></li>
+            <li><a href="http://m.baidu.com/searchbox?action=reserve&amp;type=baiduchannel&amp;from=1612c">手机百度，最省流量的极速搜索APP</a></li>
+            <li><a href="http://e.baidu.com/m2/?refer=209">百度推广，让有需求的客户找到你</a></li>
+        </ul>
+        <div class="foot">
+            <div>
+                <a href="http://m.baidu.com/?from=844b&amp;pu=sz%401321_480&amp;wpo=btmfast">极速版</a>
+                <a href="http://ufosdk.baidu.com/?m=Client&amp;a=postView&amp;appid=517&amp;activityId=1&amp;needEmail=false&amp;u=wise&amp;bw=1032B65F5B11B366B4BE34F8B5AF4610&amp;kw=&amp;tn=iphone">用户反馈</a>
+            </div>
+            <a class="index-copyright" href="http://m.baidu.com/pub/help.php?pn=25&amp;ssid=0&amp;from=844b&amp;uid=&amp;pu=sz%401320_2001%2Cta%40iphone_1_8.0_3_600&amp;bd_page_type=1">使用百度前必读&nbsp;Baidu&nbsp;京ICP证030173号</a>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

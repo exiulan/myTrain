@@ -1,0 +1,82 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+/*头部*/
+.header{
+    height: 20px;
+}
+
+/*页面底部*/
+.footer{
+    height: 100px;
+    background-color: #f3eaff;
+    text-align: center;
+}
+
+h2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*标题导航栏*/
+.nav a{
+    font-weight: 500;
+    color: #563d7c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+a.html-know{
+    font-size: 20px;
+}
+
+.me{
+    color:#b6b7ba;
+}
+/*页面中部标题*/
+.introduce{
+    height:200px;
+    background-color: #4e317c;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+p{
+    text-align: left;
+    line-height: 22px;
+    color: #d9b3ff;
+}
+
+.introduce p{
+    text-indent: 2rem;
+}
+
+.nav a:hover {
+    color: #463265;
+    background-color: #f9f9f9;
+}
+
+hr{
+    border: 3px solid #bdbfff;
+    margin: 15px 0  15px 0;
+}
+
+
+.html5{
+    color: #000000;
+}
+
+.nav-list{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

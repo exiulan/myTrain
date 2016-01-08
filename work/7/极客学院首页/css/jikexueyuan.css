@@ -1,0 +1,1458 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+li,
+button,
+dd,
+div,
+dl,
+i,
+img,
+input,
+p,
+span,
+ul {
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+h2,
+input {
+    font-size: 100%;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.header.wrap {
+    position: relative;
+}
+
+.header.wrap:after {
+    display: table;
+    clear: both;
+    content: " ";
+}
+
+
+/*头部宽度高度*/
+
+.header {
+    min-height: 70px;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 1000px;
+    height: 50px;
+}
+
+
+/*头部logo*/
+
+.header .logo {
+    width: 113px;
+    float: left;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+
+/*头部搜索框*/
+
+.search-section {
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -190px;
+    width: 380px;
+    height: 38px;
+    border: 1px solid #e4e4e4;
+    /*box-sizing: border-box;*/
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+}
+
+.search-section .search-text {
+    width: 100%;
+    height: 36px;
+    padding: 9px 150px 9px 15px;
+    border: 0;
+    line-height: 18px;
+    color: #333;
+    background: #fff;
+    font-size: 12px;
+    text-align: left;
+    padding-right: 55px;
+}
+
+.search-section .search-btn {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 40px;
+    height: 38px;
+    border: 1px solid #dfdfdf;
+    color: #6d6d6d;
+    background: url(../img/topsearch-icon_e1f5df2.png) center center no-repeat;
+}
+
+
+/*搜索热词*/
+
+.search-section .hot-words {
+    position: absolute;
+    top: 9px;
+    right: 48px;
+    font-size: 12px;
+    height: 17px;
+    display: block;
+}
+
+.search-section .hot-words a {
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: 5px;
+    color: #808080;
+    background: #f3f3f3;
+}
+
+.hot-words a:hover {
+    background-color: #7e8080;
+    color: #000000;
+}
+
+.search-btn:hover {
+    background-color: #35b558;
+    cursor: pointer;
+}
+
+.loginbox,
+.loginbox_event {
+    float: right;
+    text-align: right;
+    line-height: 50px;
+    font-size: 12px;
+    color: #333;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.loginbox a {
+    text-decoration: none;
+    color: #333;
+}
+
+em {
+    font-style: normal;
+    padding: 0px 10px
+}
+
+.loading {
+    width: 100%;
+    height: 2px;
+    overflow: hidden;
+    background: #f3f3f3;
+}
+
+
+/*导航条*/
+
+.navpositon {
+    height: 42px;
+    width: 100%;
+}
+
+.nav-box {
+    height: 41px;
+    position: relative;
+    background: rgba(255, 255, 255, .9);
+    border-bottom: 1px solid #e8e8e8;
+    -webkit-box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+    -moz-box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.nav-box .nav {
+    height: 42px;
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.nav-box .nav .navbox {
+    width: 740px;
+}
+
+.nav-box .nav .user-need {
+    height: 44px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    line-height: 44px;
+    font-size: 12px;
+}
+
+.nav-box .nav a {
+    display: inline-block;
+    padding: 0 22px;
+    font-size: 14px;
+    color: #333;
+    line-height: 44px;
+}
+
+.nav-box .nav a:nth-child(1) {
+    padding: 0;
+    margin-right: 22px;
+}
+
+.nav-box .nav .user-need a:nth-child(1) {
+    margin-right: 0!important;
+}
+
+.nav-box .nav .user-need a {
+    width: auto!important;
+    font-size: 12px;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.nav-box a:hover,
+.user-need span:hover {
+    color: #35b558;
+}
+
+.mar-t20 {
+    margin-top: 20px!important;
+    height: 307px;
+}
+
+#hot-lessonbox {
+    height: 307px;
+}
+
+.w-1000 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+/*课程分类*/
+
+.lesson-classfiy-nav {
+    width: 208px;
+    float: left;
+    border: 1px solid #e4e4e4;
+    border-top: 2px solid #35b558;
+    height: 307px;
+    z-index: 20;
+    overflow: hidden;
+}
+
+
+/*课程分类*/
+
+.lesson-classfiy-nav ul {
+    position: absolute;
+    z-index: 800;
+    width: 210px;
+    height: 305px;
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid rgb(228, 228, 228);
+    border-top: 0;
+    border-bottom-width: 0px;
+}
+
+
+/*课程分类*/
+
+.lesson-classfiy-nav li>div {
+    width: 208px;
+    height: 37px;
+    line-height: 37px;
+    padding: 0 15px;
+    font-size: 13px;
+    color: #333;
+    border-bottom: 1px solid #F5F5F5;
+    background: #fff url(../img/more-icon_d39346f.png) 186px center no-repeat;
+    background-size: 6px 10px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+
+/*鼠标略过*/
+
+.lesson-classfiy-nav ul:hover {
+    border-bottom: 1px solid rgb(228, 228, 228);
+    overflow: visible;
+    height: 408px;
+}
+
+
+/*字体颜色变化*/
+
+.lesson-classfiy-nav ul li:hover a {
+    color: #35b558;
+}
+
+.lesson-classfiy-nav li div a {
+    color: #333;
+}
+
+
+/*课程分类 hover显示*/
+
+.lesson-classfiy-nav li .lesson-list-show {
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    position: absolute;
+    left: 209px;
+    top: -2px;
+    z-index: 100;
+    border-left: 0;
+    display: none;
+    padding-bottom: 30px;
+    width: 591px;
+    min-height: 410px;
+}
+
+
+/*第二个div*/
+
+.lesson-classfiy-nav li .lesson-list-show div {
+    width: 590px;
+}
+
+.lesson-classfiy-nav li .lesson-list-show dl {
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.lesson-classfiy-nav li .lesson-list-show dt {
+    display: block;
+    border-bottom: 1px solid #f5f5f5;
+    height: 37px;
+    line-height: 45px;
+}
+
+.lesson-classfiy-nav li .lesson-list-show dd {
+    list-style: none;
+    margin-left: -8px;
+    padding: 3px 0;
+}
+
+.lesson-classfiy-nav li .lesson-list-show dd a {
+    height: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    padding: 0 7px;
+    color: #666;
+    display: inline-block;
+    font-size: 12px;
+    border-left: 1px solid #e0e0e0;
+    float: left;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+
+/*dd最后一个元素重写*/
+
+.lesson-classfiy-nav li .lesson-list-show dd a:last-child {
+    border-right: 0;
+}
+
+
+/*课程分类底部的下拉标签*/
+
+.lesson-classfiy-nav .line {
+    position: absolute;
+    z-index: 2000;
+    height: 9px;
+    width: 210px;
+    background: #f9f9f9 url(../img/alt-d_5632351.png) center center no-repeat;
+    background-size: 7px 3px;
+    bottom: 0;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+
+/*图片切换*/
+
+.index-banner {
+    width: 569px;
+    height: 307px;
+    float: left;
+    margin-left: 10px;
+    background: #ccc;
+    border: 1px solid #e4e4e4;
+    border-right: 0;
+}
+
+
+/*图片1*/
+
+.slide1 {
+    background: url(../img/56177472041b1.jpg) 50% 50% no-repeat rgb(53, 181, 88);
+}
+
+.slide2 {
+    background: url(../img/562dcbb3a2e40.jpg) 50% 50% no-repeat rgb(53, 181, 88);
+}
+
+.slide3 {
+    background: url(../img/56178839c6878.jpg) 50% 50% no-repeat rgb(53, 181, 88);
+}
+
+.slide4 {
+    background: url(../img/562449466dad4.jpg) 50% 50% no-repeat rgb(53, 181, 88);
+}
+
+.slide5 {
+    background: url(../img/5618b6f9c5568.jpg) 50% 50% no-repeat rgb(53, 181, 88);
+}
+
+
+/*图片切换容器*/
+
+.swiper-container,
+.swiper-container2 {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 1;
+    height: 305px;
+    width: 100%;
+}
+
+
+/*图片切换*/
+
+
+/*-1183 -1707 -2276 -3414*/
+
+.swiper-wrapper {
+    position: relative;
+    width: 3983px;
+    height: 305px;
+}
+
+
+/*图片切换*/
+
+
+/*图标左右切换图标*/
+
+#banner-left,
+#banner-right {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 800;
+    cursor: pointer;
+    width: 40px;
+    height: 50px;
+    display: none;
+    /*显示*/
+    overflow: hidden;
+}
+
+#banner-right {
+    right: 0;
+    background: url(../img/banner-right_a0bdd7d.png) -10px -5px no-repeat;
+}
+
+#banner-left {
+    left: 0;
+    background: url(../img/banner-left_fe0df34.png) -10px -5px no-repeat;
+}
+
+
+/*图片*/
+
+.swiper-slide {
+    position: relative;
+    text-align: center;
+    height: 305px!important;
+    float: left;
+    width: 569px;
+}
+
+
+/*图片*/
+
+.swiper-slide .swiper-box {
+    width: 570px;
+    margin: 0 auto;
+    height: 305px;
+    padding-top: 50px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+
+/*图片*/
+
+.swiper-slide .swiper-box .banner-infor {
+    font-size: 20px;
+    font-weight: 400;
+    color: #eee;
+    margin-bottom: 30px;
+}
+
+
+/*图片下方条*/
+
+.pagination {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    bottom: 15px;
+    width: 100%;
+    z-index: 800;
+}
+
+
+/*图片切换下方条*/
+
+.swiper-pagination-switch {
+    display: inline-block;
+    width: 39px;
+    height: 7px;
+    background: url(../img/swiper1_6a811bf.jpg) center center no-repeat;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+
+/*图片切换下方条变化*/
+
+.swiper-active-switch {
+    background: url(../img/swiper2_78fab30.jpg) center center no-repeat;
+}
+
+
+/*极客学院pager右边信息*/
+
+.lesson-right-show {
+    width: 208px;
+    float: left;
+    border: 1px solid #E4E4E4;
+    height: 307px;
+    overflow: hidden;
+}
+
+
+/*极客学院右边信息*/
+
+.lesson-right-show .free-box {
+    height: 153px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+
+/*极客学院右边信息*/
+
+.lesson-right-show .free-box a {
+    padding: 20px;
+    display: block;
+}
+
+.lesson-right-show .free-box h2 {
+    font-size: 15px;
+    color: #666;
+}
+
+.lesson-right-show .free-box p {
+    color: #35b558;
+    font-size: 12px;
+    line-height: 1.8;
+    margin: 10px 0 2px;
+}
+
+
+/*极客学院右边信息span*/
+
+.lesson-right-show .free-box p span:nth-child(1) {
+    padding-left: 0;
+    color: #35b558;
+}
+
+
+/*极客学院右边信息span*/
+
+.lesson-right-show .free-box p span {
+    padding: 5px;
+    color: #35b558;
+}
+
+
+/*极客学院右边信息VIP*/
+
+.lesson-right-show .free-box button {
+    width: 168px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    border-radius: inherit;
+    margin-top: 10px;
+    cursor: pointer;
+    border-color: #7bda95;
+    outline: 0;
+    transition: border-color 1s, background 1s;
+}
+
+
+/*button上面的样式*/
+
+.greenbtn3 {
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 18px;
+    background: #92daab;
+    border: 0 none;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.greenbtn2 {
+    display: inline-block;
+    color: #35b558;
+    font-size: 16px;
+    background: #f3fff6;
+    border: 1px solid #57b577;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+
+/*button hover之后*/
+
+.greenbtn3:hover,
+.greenbtn2:hover {
+    background-color: #35b558;
+    color: #ffffff;
+}
+
+
+/*热门课程导航条*/
+
+.mar-t30 {
+    margin-top: 30px!important;
+}
+
+.w-1000 {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+
+/*导航条样式*/
+
+#hot-lessonbox {
+    width: 1000px;
+    height: 480px;
+}
+
+
+/*导航条ul样式*/
+
+.hot-lesson ul {
+    height: 41px;
+    background: url(../img/hotnav_bc_f22b37e.jpg) 0 100% repeat-x;
+}
+
+
+/*导航条ul中li的样式*/
+
+.hot-lesson ul li {
+    width: 16.6%;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+
+/*导航条ul中li底部的样式*/
+
+.hot-lesson ul li.on {
+    border-bottom: 2px solid #35b558;
+    background: url(../img/index-sj_cc73747.png) center bottom no-repeat;
+    background-size: 10px 4px;
+    color: #35b558;
+}
+
+a,
+dd,
+div,
+dl,
+i,
+img,
+input,
+li,
+p,
+span,
+ul {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+/*课程推荐*/
+
+#hot-lessonbox .lesson-list ul {
+    width: 1100px;
+    margin-top: 0;
+}
+
+
+/*课程推荐li样式*/
+
+#hot-lessonbox .lesson-list ul li {
+    margin-right: 20px;
+    background: 0 0;
+    margin-bottom: 20px;
+    height: 220px;
+    width: 235px;
+    float: left;
+}
+
+
+/*课程图片样式*/
+
+#hot-lessonbox .lesson-list .lessonimg-box {
+    border: 1px solid #e4e4e4;
+    border-bottom: 0;
+    width: 235px;
+    height: 130px;
+    position: relative;
+}
+
+
+/*课程信息免费标签*/
+
+.lesson-list .lessonimg-box .free-icon {
+    height: 22px;
+    width: 38px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 8px;
+    z-index: 101;
+    background: url(../img/icon_7f8b929.png) -58px -43px no-repeat;
+}
+
+
+/*课程信息中播放按钮div hover之后显示*/
+
+.lesson-list .lessonplay {
+    background: #000;
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+
+/*课程信息中播放按钮*/
+
+.lesson-list .lessonplay .playericon {
+    position: absolute;
+    z-index: 120;
+    width: 50px;
+    height: 50px;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    background: url(../img/player_icon_5c67475.png) 0 0 no-repeat;
+    cursor: pointer;
+    background-size: 50px 50px;
+}
+
+.lesson-list .lessonimg-box .lessonimg {
+    width: 100%;
+    height: 130px;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+img,
+input,
+label,
+select {
+    vertical-align: middle;
+}
+
+
+/*实践路径图*/
+
+#learn-way {
+    height: 380px;
+}
+
+
+/*课程信息样式鼠标hover之后高度加高*/
+
+.lesson-list .lesson-infor {
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    background: #fff!important;
+    height: 88px;
+    display: block;
+    z-index: 200;
+}
+
+
+/*课程信息标题*/
+
+.lesson-list .lesson-infor .lesson-info-h2,
+.lesson-list .lesson-infor h5 {
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+    margin-bottom: 12px;
+    height: 36px;
+    overflow: hidden;
+}
+
+
+/*课程信息描述鼠标hover之后显示*/
+
+.lesson-list .lesson-infor p {
+    color: #808080;
+    font-size: 12px;
+    line-height: 18px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-bottom: 10px;
+    display: none;
+}
+
+
+/*课程信息时间样式 鼠标hover之后显示*/
+
+.lesson-list .lesson-infor .timeandicon {
+    font-size: 12px;
+    color: #808080;
+    position: relative;
+}
+
+
+/*课程信息时间样式dl*/
+
+.lesson-list .lesson-infor .timeandicon dl {
+    width: 120px;
+    float: left;
+    white-space: nowrap;
+}
+
+.lesson-infor .timeandicon .zhongji {
+    display: none;
+}
+
+
+/*课程信息时间 学习次数 hover之后显示block*/
+
+.lesson-list .lesson-infor .timeandicon .learn-number {
+    float: right;
+    display: none;
+}
+
+
+/*课程信息样式*/
+
+.lesson-list .lesson-infor .timeandicon dl dd {
+    font-size: 12px;
+}
+
+
+/*课程信息时钟div样式*/
+
+.mar-b8 {
+    margin-bottom: 8px;
+}
+
+
+/*课程信息时钟样式*/
+
+.lesson-list .lesson-infor .timeandicon .time-icon {
+    background: url(../img/clok_a413ecf.png) 0 0 no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+    background-size: 14px 14px;
+}
+
+
+/*课程信息右侧图标hover之后bottom: -2px;*/
+
+.lesson-list .lesson-infor .lessonicon-box {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    bottom: 4px;
+}
+
+
+/*课程信息右侧图标链接*/
+
+.lesson-list .lesson-infor .lessonicon-box a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+}
+
+
+/*课程信息右侧图标样式*/
+
+.lesson-list .lesson-infor .lessonicon-box a img {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+.lesson-infor .timeandicon .xinhao-icon2 {
+    background: url(../img/one-ji_1731712.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+
+
+/*课程信息描述*/
+
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+/*推荐课程部分hover属性*/
+
+.index-public-title strong {
+    font-size: 18px;
+    color: #333;
+    float: left;
+    font-weight: 500;
+}
+
+.index-public-title {
+    margin-bottom: 16px;
+}
+
+.index-public-title .way {
+    font-size: 12px;
+    line-height: 13px;
+    color: #fff;
+    background: #999;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    width: 13px;
+    height: 13px;
+    float: left;
+    margin: 5px 8px 0;
+    cursor: pointer;
+}
+
+
+/*问号提示信息hover之后显示*/
+
+.index-public-title .way-infor {
+    font-size: 12px;
+    color: #666;
+    padding: 2px 4px;
+    border: 1px solid #e4e4e4;
+    position: relative;
+    display: inline-block;
+    box-shadow: 1px 1px 3px #ccc;
+    opacity: 0;
+    margin-left: -5px;
+}
+
+.index-public-title .more-lesson {
+    font-size: 12px;
+    color: #2d85ca;
+    float: right;
+    margin-top: 4px;
+}
+
+.learn-card a {
+    width: 20%;
+    border: 1px solid #E4E4E4;
+    float: left;
+    text-align: center;
+    padding: 30px 0;
+    display: block;
+    height: 340px;
+    border-right: 0;
+    overflow: hidden;
+}
+
+.learn-card a img {
+    margin-bottom: 24px;
+    width: 70px;
+    height: 70px;
+}
+
+.learn-card a h2 {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.learn-card a p {
+    font-size: 12px;
+    color: #333;
+    line-height: 20px;
+    height: 20px;
+    width: 199px;
+    overflow: hidden;
+}
+
+.learn-card a .greenbtn2,
+.learn-card a #Waiting-btn {
+    width: 140px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 40px;
+    cursor: pointer;
+    outline: 0;
+}
+
+.learn-card a #Waiting-btn {
+    background: #f5f5f5;
+    color: #808080;
+    border: 1px solid #e4e4e4;
+    outline: 0;
+}
+
+
+/*hover的时候按钮的背景颜色也发生变化*/
+
+.learn-card a:hover {
+    border: 1px solid #44ff54;
+}
+
+
+/*没有开启的按钮hover后颜色加深*/
+
+#Waiting-btn：hover {
+    background-color: #808080;
+    color: #000000;
+}
+
+.mar-t40 {
+    margin-top: 40px!important;
+}
+
+.learnbox {
+    height: 521px;
+}
+
+.mapbox {
+    border-bottom: 1px solid #E4E4E4;
+    border-right: 1px solid #E4E4E4;
+    width: 1000px;
+    height: 481px;
+    overflow: hidden;
+}
+
+.mapbox .mapbox-1200 {
+    width: 1050px;
+}
+
+.card-transform {
+    width: 167px;
+    height: 120px;
+    border: 1px solid #E4E4E4;
+    border-right: 0;
+    border-bottom: 0;
+    float: left;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*背部立即学习按钮*/
+
+.greenbtn {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    width: 140px;
+    height: 36px;
+    cursor: pointer;
+    display: inline-block;
+    background: #35b558;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    border: 0 none;
+}
+
+.card-transform .front {
+    border-bottom: 1px solid #E4E4E4;
+    padding: 15px 0;
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    background-color: #fff;
+}
+
+.card-transform .back,
+.card-transform .front {
+    border-bottom: 1px solid #E4E4E4;
+    width: 167px;
+    height: 120px;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: .6s;
+    -moz-backface-visibility: hidden;
+    -moz-transition: .6s;
+    -ms-backface-visibility: hidden;
+    -ms-transition: .6s;
+    backface-visibility: hidden;
+    transition: .6s;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/*前面动画设置*/
+
+.card-transform:hover .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+
+/*背面动画设置*/
+
+.card-transform .back {
+    padding-top: 30px;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    background-color: #f5f5f5;
+}
+
+.card-transform:hover .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+
+/*背面strong设置*/
+
+.card-transform .back strong {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: 400;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.card-transform .front img {
+    margin-bottom: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.card-transform .front h2 {
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #333;
+}
+
+.card-transform .front h2 {
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #333;
+}
+
+.card-transform .front span {
+    font-size: 14px;
+    color: #35b558;
+}
+
+.mar-t50 {
+    margin-top: 50px!important;
+    min-width: 1000px;
+}
+
+#footer .jkinfor-block {
+    background: #fafafa;
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+#footer .jkinfor-block .jkinfor {
+    width: 1000px;
+    margin: 0 auto;
+    min-height: 200px;
+}
+
+#footer .jkinfor dl {
+    width: 185px;
+    padding-left: 30px;
+    color: gray;
+    margin: 25px 0;
+    float: left;
+    border-left: 1px solid #E4E4E4;
+    min-height: 175px;
+}
+
+#footer .jkinfor dl dt {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+#footer .jkinfor a {
+    color: gray;
+    padding-left: 5px;
+}
+
+#footer .copyright {
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 20px;
+}
+
+#footer .copyright strong {
+    font-weight: 400;
+}
+
+#footer .copyright a {
+    color: #999;
+}
+
+#footer .search-share {
+    width: 260px;
+    float: left;
+    min-height: 226px;
+    border-left: 1px solid #E4E4E4;
+    padding: 20px 0 0 40px;
+}
+
+#footer .search-share .jktxt {
+    font-size: 15px;
+    color: #35b558;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+#footer .search-share .app-download img {
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+
+#footer .search-share .app-download strong {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+#footer .search-share .app-download p {
+    font-size: 14px;
+    color: gray;
+    background: url(http://s1.jikexueyuan.com/common/images/more-icon_d39346f.png) 160px center no-repeat;
+    background-size: 7px 13px;
+}
+
+#footer .search-share .share {
+    margin-top: 15px;
+}
+
+#footer .search-share .share a.sina-icon {
+    background-position: -23px 0;
+}
+
+#footer .search-share .share a.tieba-icon {
+    background-position: -145px 0;
+}
+
+#footer .search-share .share a.qq-icon {
+    background-position: -23px -82px;
+}
+
+
+/*级客学院微信扫码*/
+
+#footer .search-share .share a.qq-icon .weinxinpop {
+    position: absolute;
+    bottom: 32px;
+    left: -48px;
+    z-index: 200;
+    display: none;
+}
+
+#footer .kefu-online {
+    margin-top: 15px;
+    padding-left: 35px;
+}
+
+#footer .kefu-online .kefu-icon.online {
+    background-position: 0 0;
+}
+
+#footer .kefu-online h5 {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 2px;
+    line-height: 22px;
+    padding-left: 5px;
+}
+
+#footer .kefu-online p {
+    color: gray;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+#footer .search-share .share a {
+    background: url(http://s1.jikexueyuan.com/common/images/icon_7f8b929.png) -23px 0 no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+#footer .kefu-online a {
+    display: block;
+    padding: 0;
+}
+
+#footer .kefu-online .kefu-icon {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: -40px;
+    background: url(http://s1.jikexueyuan.com/common/images/kefu_8edc734.png) no-repeat -40px 0/80px 40px;
+}
+
+#footer .kefu-online .kefu-icon.online {
+    background-position: 0 0;
+}
+
+#footer .kefu-online a {
+    display: block;
+    padding: 0;
+}
+
+#footer .kefu-online {
+    margin-top: 15px;
+    padding-left: 35px;
+}
+
+#footer .search-share .share:after {
+    display: table;
+    clear: both;
+    content: " ";
+}
+
+#footer .jkinfor dl dd {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.app-download div {
+    display: inline-block;
+}
+
+
+/*<!-- 极客学院底部 a元素hover之后变为蓝色-->*/
+
+#footer div a:hover,
+#footer .search-share .app-download a:hover p,
+#footer .search-share .app-download a:hover strong {
+    color: #35b558;
+}

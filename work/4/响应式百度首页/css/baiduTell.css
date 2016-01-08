@@ -1,0 +1,499 @@
+/*清除boottrap怪异盒模型*/
+div{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/*清除网页边距*/
+.container {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*分别设置header、pager、bottom样式*/
+
+.header {
+    height: 259px;
+    padding-bottom: 10px;
+}
+
+.pager {
+    height: 802px;
+    padding: 2px 10px 10px 10px;
+    border: 1px;
+    margin-bottom: 10px;
+}
+
+.bottom {
+    height: 187px;
+}
+
+div,
+.text {
+    margin: 0;
+    padding: 0;
+}
+
+.user_info {
+    height: 54px;
+}
+
+/*天气有关信息的样式设计*/
+.weather {
+    height: 48px;
+    line-height: 48px;
+    left: 0;
+    top: 0;
+}
+
+.weather * {
+    display: inline-block;
+}
+
+.weather div:first-child {
+    font-size: 30px;
+    color: #818388;
+    left: 0;
+    top: 0;
+}
+
+.weather-status {
+    position: relative;
+    padding: 0 6px;
+    top: 1px;
+}
+
+.weather-status:before {
+    content: '';
+    position: absolute;
+    left: -.5px;
+    height: 26px;
+    border-left: 1px solid #eee;
+}
+
+.weather p {
+    height: 13px;
+    line-height: 13px;
+    font-size: 11px;
+    color: #7e818a;
+    display: block;
+    position: relative;
+}
+
+.logo {
+    height: 55px;
+    padding: 17px 0 15px 0;
+    text-align: center;
+}
+
+img {
+    width: 175px;
+    height: 55px;
+    text-align: center;
+}
+
+/*输入框样式,使用弹性盒模型*/
+.form {
+    margin: 0 10px;
+    border: 1px solid #8d9394;
+    border-radius: 1px;
+    height: 42px;
+    -webkit-box-shadow: 0 1px 1px 0 #dfdfdf;
+    background: #fff;
+    text-align: center;
+}
+
+.con-wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.text {
+    padding: 6px 35px 6px 6px;
+    height: 42px;
+    line-height: 28px;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    flex: 1;
+    display: block;
+    background: transparent;
+    position: relative;
+    border: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    resize: none;
+}
+
+.se-inner {
+    width: 79px;
+    position: relative;
+}
+
+.icon-wrap {
+    position: absolute;
+    top: 0;
+    left: -39px;
+    z-index: 10;
+}
+
+.icon {
+    width: 39px;
+    height: 39px;
+    text-align: left;
+}
+
+.icon:before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 12px;
+    border: 4px solid transparent;
+    border-top-color: #717077;
+}
+
+.icon:after {
+    content: "";
+    display: inline-block;
+    margin-top: 10px;
+    height: 20px;
+    width: 15px;
+    background: url(callicon.png);
+    background-size: 37px 20px;
+}
+
+.bnt {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 79px;
+    height: 42px;
+    background: #ececec;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e7e9eb);
+    color: #46484b;
+    -webkit-box-shadow: 0 0 0 1px #fff inset;
+    box-shadow: 0 0 0 1px #fff inset;
+    -webkit-text-shadow: 0 1px 0 #fafafa;
+    text-shadow: 0 1px 0 #fafafa;
+    white-space: nowrap;
+    line-height: 42px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    border: 0;
+    border-left: 1px solid #8d9394;
+}
+
+
+/*导航相关的样式设计*/
+
+.nav-baidu {
+    height: 43px;
+    margin: 17px 0 14px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav-baidu a:first-child,
+.nav-baidu a:nth-child(7) {
+    margin-left: 2%;
+}
+
+.nav-baidu a {
+    float: left;
+    width: 16%;
+    font-size: 13px;
+    color: #262626;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-news,.nav-novels,.nav-video,.nav-life,.nav-map,.nav-more,.nav-more,.nav-image,.nav-website,.add,
+.icon-refresh,.ico-edit {
+    color: #777;
+}
+
+.nav-baidu a i {
+    display: block;
+    margin-bottom: 4px;
+    height: 24px;
+}
+
+
+/*交通状况*/
+
+.traffic,
+.nav,
+.hotword,
+.lbs,
+.admin {
+    border: 1px solid #d9dde2;
+    margin-top: 8px;
+    background: #fff;
+}
+
+.traffic {
+    height: 135px;
+}
+
+
+/*标题*/
+
+.plus-title {
+    position: relative;
+    margin: 2px 14px 0;
+    height: 40px;
+    text-align: left;
+}
+
+.normal-title {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+}
+
+.normal-title i {
+    position: absolute;
+    top: 11px;
+    left: -2px;
+}
+
+.plus-title h2 {
+    padding-left: 19px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #aaa;
+    word-spacing: 5px;
+    margin: 0;
+}
+
+.plus-edit ul {
+    display: none;
+    position: absolute;
+    top: 33px;
+    right: 6px;
+    width: 91px;
+    border: 1px solid #d9dde2;
+    -webkit-shadow: 0 0 2px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1);
+    background: #fff;
+    text-align: center;
+}
+
+.plus-edit li {
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+    line-height: 45px;
+    color: #262626;
+}
+
+
+/*内容*/
+
+.plus-content {
+    overflow: hidden;
+    margin-top: -5px;
+    font-size: 14px;
+}
+
+.plus-empty {
+    margin: 0 -8px;
+    padding-top: 12px;
+    height: 70px;
+    text-align: center;
+}
+
+.plus-empty p:first-child {
+    margin-bottom: 10px;
+    line-height: 15px;
+    font-size: 15px;
+    color: #0058d2;
+}
+
+.plus-empty p:last-child {
+    line-height: 14px;
+    font-size: 14px;
+    color: #262626;
+}
+
+
+/*常用网址*/
+
+.nav {
+    height: 121px;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0 6px;
+    width: 25%;
+    height: 42px;
+    line-height: 42px;
+    color: #262626;
+}
+
+
+.hasnew{
+    height: 84px;
+}
+
+/*避免换行*/
+.nav a span {
+    display: inline-block;
+    position: relative;
+    padding: 0 6px 0 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.nav .plus-content a.hao123 {
+    letter-spacing: -1px;
+}
+
+.hotword {
+    height: 163px;
+}
+
+.icon-news,.icon-traffic{
+    color: #7db164;
+}
+
+.plus-edit {
+    position: absolute;
+    right: -12px;
+    top: 0;
+    width: 40px;
+    height: 34px;
+    text-align: center;
+    line-height: 40px;
+    color: #b6b7ba;
+}
+/*刷新*/
+.hotword .refresh {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    width: 82px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 10px;
+    color: #262626;
+    font-size: 14px;
+    text-align: center;
+}
+
+.hotword .icon-refresh {
+    position: absolute;
+    top: 2px;
+    left: -2px;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+}
+
+/*热搜列表*/
+.hotword-list {
+    padding: 0 14px;
+    text-align: left;
+    overflow: hidden;
+    margin-top: -5px;
+    font-size: 14px
+}
+
+/*生活*/
+.lbs {
+    height: 288px;
+}
+.icon-lbs,.icon-nav{
+    color:#60ade8;
+}
+/*用户信息*/
+.admin {
+    padding: 0;
+    line-height: 45px;
+    height: 45px;
+    color: #0058d2;
+    font-size: 15px;
+    text-indent: -8px;
+    text-align: center;
+}
+
+
+/*底部设置*/
+
+.introduce {
+    height: 99px;
+    margin: 0 25px;
+}
+
+.introduce li {
+    height: 33px;
+    line-height: 33px;
+    text-align: left;
+}
+
+.introduce a {
+    position: relative;
+    display: block;
+    padding-left: 21px;
+    font-size: 13px;
+    color: #555;
+    background: none no-repeat 0 center;
+    -webkit-background-size: 15px 11px;
+}
+
+.foot {
+    margin: 20px 25px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.foot div a:first-child {
+    float: left;
+}
+
+.foot div a:last-child {
+    float: right;
+}
+
+.foot div a {
+    display: inline-block;
+    height: 24px;
+    width: 47%;
+    line-height: 24px;
+    border: 1px solid #ececec;
+    border-radius: 1px;
+    color: #555;
+    font-size: 13px;
+}
+
+.index-copyright {
+    display: block;
+    font-size: 10px;
+    line-height: 20px;
+    padding: 35px 0 13px;
+    color: #aaa;
+}

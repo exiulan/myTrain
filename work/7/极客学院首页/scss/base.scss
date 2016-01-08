@@ -1,0 +1,57 @@
+/*消除页面边距*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*定义变量*/
+$fontFamily: Verdana,
+"Lantinghei SC",
+"Hiragino Sans GB",
+"Microsoft Yahei",
+Helvetica,
+arial,
+\5b8b\4f53,
+sans-serif;
+$primaryColor: #333;
+
+/*定义一个基类 Mixin*/
+@mixin base{
+	list-style: none;
+    text-decoration: none;
+    color: $primaryColor;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family:$fontFamily;
+}
+
+//定义一个font类 Mixin
+@mixin font{
+    font-size: 100%;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+/*继承基类*/
+a,
+li,
+button,
+dd,
+div,
+dl,
+i,
+img,
+input,
+p,
+span,
+ul {
+    @include base;
+}
+
+/*继承font类*/
+h2,input {
+    @include font;
+}
